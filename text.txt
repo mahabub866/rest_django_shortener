@@ -1,0 +1,9 @@
+python -m venv shortener-env
+shortener-env\Scripts\activate
+python -m pip install Django
+django-admin startproject urlshortener
+cd urlshortener
+python manage.py runserver
+django-admin startapp api
+pip install djangorestframework
+python -m pip install django-cors-headers
